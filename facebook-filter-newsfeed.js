@@ -2,7 +2,7 @@
 function newsFeedSnipe(w, t) {
    w = w || 'Sponsored';
    t = t || 3000;
-   var ns = document.body.getElementsByClassName('userContentWrapper');
+   var ns = document.body.getElementsByClassName('fbUserContent');
    for (var i = 0; i < ns.length; i++) {
       if (ns[i].innerHTML.indexOf(w) > 0) {
          ns[i].parentNode.removeChild(ns[i]);
