@@ -1,0 +1,14 @@
+// remove elements by classname
+const removeByClassName = (cName) => {
+  let els = document.getElementsByClassName(cName);
+  if (els.length < 1) { return false; }
+  function removeElement(e) {
+    if(!e){ return false;}
+    console.log('Removed element: ', e);
+    e.parentNode.removeChild(e);
+    return true;
+  };
+  for (let i = 0; i < els.length; i++) {
+    removeElement(els[i]);
+  }
+};
